@@ -10,4 +10,4 @@ Simple 6502 DIY computer for peripheral prototyping
 5. SyMon III directly working through UART/USB
 6. Simple emulator
 7. PCB with all possible markings, memory map and values
-8. Compact form, retro feel&look
+8. Compact form, retro look&feel
