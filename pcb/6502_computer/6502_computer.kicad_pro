@@ -498,6 +498,10 @@
       {
         "netclass": "Power",
         "pattern": "VCC"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/5V"
       }
     ]
   },
