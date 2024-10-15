@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-extern "C" uint8_t _binary_firmware_SYMONIII_OBJ_start[8*1024];
+extern "C" uint8_t _binary_symon_bin_start[8*1024];
 
 System* global = 0;
 
@@ -73,7 +73,7 @@ System::ramWrite( uint16_t _address, uint8_t _data )
 uint8_t
 System::romRead( uint16_t _address )
 {
-    return _binary_firmware_SYMONIII_OBJ_start[ _address ];
+    return _binary_symon_bin_start[ _address ];
 }
 
 void

@@ -8,19 +8,20 @@
             "command": "make",
             "type": "process",
             "args": [
-                "-C","${workspaceFolder}/emulator/src", "all"
+                "-C","${workspaceFolder}/emulator", "all"
             ],
             "problemMatcher": []
         },
         {
             "label": "clean emulator",
             "suppressTaskName": true,
-            "isTestCommand": true,
+            "isBuildCommand": true,
             "command": "make",
             "type": "process",
             "args": [
-                "-C","${workspaceFolder}/emulator/src", "clean"
-            ]
+                "-C","${workspaceFolder}/emulator", "clean"
+            ],
+            "problemMatcher": []
         },
     ]
 }
