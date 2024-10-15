@@ -16,7 +16,10 @@ emulator: main.o cpu/mos6502.o firmware/SYMONIII.o acia.o console.o system.o
 	$(CPP) -o emulator main.o cpu/mos6502.o firmware/SYMONIII.o acia.o console.o system.o
 
 clean:
-	rm *.o
-	rm emulator
+	rm -f *.o
+	rm -f emulator
 
-all: clean emulator
+firmware:
+	$(MAKE) -C firmware
+
+all: clean firmware emulator

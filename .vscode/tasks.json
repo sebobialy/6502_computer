@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build emulator",
+            "suppressTaskName": true,
+            "isBuildCommand": true,
+            "command": "make",
+            "type": "process",
+            "args": [
+                "-C","${workspaceFolder}/emulator/src", "all"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean emulator",
+            "suppressTaskName": true,
+            "isTestCommand": true,
+            "command": "make",
+            "type": "process",
+            "args": [
+                "-C","${workspaceFolder}/emulator/src", "clean"
+            ]
+        },
+    ]
+}
