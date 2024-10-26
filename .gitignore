@@ -1,0 +1,5 @@
+emulator/bin
+*.o
+symon.asm
+symon.bin
+src/emulator

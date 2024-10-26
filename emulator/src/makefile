@@ -11,12 +11,12 @@ CFLAGS=-g -O0 -I .
 %.o: %.OBJ
 	ld -r -b binary -o $@ $<
 
-
-emulator: main.o cpu/mos6502.o firmware/SYMONIII.o acia.o console.o system.o
-	$(CPP) -o emulator main.o cpu/mos6502.o firmware/SYMONIII.o acia.o console.o system.o
+emulator: main.o cpu/mos6502.o acia.o console.o system.o
+	$(CPP) -o emulator main.o cpu/mos6502.o ../firmware/symon.o acia.o console.o system.o
 
 clean:
-	rm *.o
-	rm emulator
+	rm -f *.o
+	rm -f cpu/*.o
+	rm -f emulator
 
-all: clean emulator
+all: emulator
