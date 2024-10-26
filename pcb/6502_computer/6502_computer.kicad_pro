@@ -512,7 +512,7 @@
       "netlist": "",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "../../../../../../../6502_computer.dsn",
       "step": "",
       "svg": "",
       "vrml": ""
